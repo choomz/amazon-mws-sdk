@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetProductCategoriesForSKUResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+  <GetProductCategoriesForSKUResult>
+    <!--1 or more repetitions:-->
+    <Self>
+      <!--Optional:-->
+      <ProductCategoryId>string</ProductCategoryId>
+      <!--Optional:-->
+      <ProductCategoryName>string</ProductCategoryName>
+      <!--Optional:-->
+      <Parent/>
+    </Self>
+  </GetProductCategoriesForSKUResult>
+  <ResponseMetadata>
+    <RequestId>string</RequestId>
+  </ResponseMetadata>
+</GetProductCategoriesForSKUResponse>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetCompetitivePricingForSKUResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+  <!--1 or more repetitions:-->
+  <GetCompetitivePricingForSKUResult SellerSKU="string" status="string">
+    <!--Optional:-->
+    <Product>
+      <Identifiers>
+        <!--Optional:-->
+        <MarketplaceASIN>
+          <MarketplaceId>string</MarketplaceId>
+          <ASIN>string</ASIN>
+        </MarketplaceASIN>
+        <!--Optional:-->
+        <SKUIdentifier>
+          <MarketplaceId>string</MarketplaceId>
+          <SellerId>string</SellerId>
+          <SellerSKU>string</SellerSKU>
+        </SKUIdentifier>
+      </Identifiers>
+      <!--Optional:-->
+      <AttributeSets>
+        <!--You may enter ANY elements at this point-->
+        <AnyElement xmlns=""/>
+      </AttributeSets>
+      <!--Optional:-->
+      <Relationships>
+        <!--You may enter ANY elements at this point-->
+        <AnyElement xmlns=""/>
+      </Relationships>
+      <!--Optional:-->
+      <CompetitivePricing>
+        <CompetitivePrices>
+          <!--1 or more repetitions:-->
+          <CompetitivePrice condition="string" subcondition="string" belongsToRequester="false">
+            <CompetitivePriceId>string</CompetitivePriceId>
+            <Price>
+              <!--Optional:-->
+              <LandedPrice>
+                <!--Optional:-->
+                <CurrencyCode>string</CurrencyCode>
+                <!--Optional:-->
+                <Amount>1000.00</Amount>
+              </LandedPrice>
+              <ListingPrice>
+                <!--Optional:-->
+                <CurrencyCode>string</CurrencyCode>
+                <!--Optional:-->
+                <Amount>1000.00</Amount>
+              </ListingPrice>
+              <!--Optional:-->
+              <Shipping>
+                <!--Optional:-->
+                <CurrencyCode>string</CurrencyCode>
+                <!--Optional:-->
+                <Amount>1000.00</Amount>
+              </Shipping>
+            </Price>
+          </CompetitivePrice>
+        </CompetitivePrices>
+        <NumberOfOfferListings>
+          <!--1 or more repetitions:-->
+          <OfferListingCount condition="string">100</OfferListingCount>
+        </NumberOfOfferListings>
+        <!--Optional:-->
+        <TradeInValue>
+          <!--Optional:-->
+          <CurrencyCode>string</CurrencyCode>
+          <!--Optional:-->
+          <Amount>1000.00</Amount>
+        </TradeInValue>
+      </CompetitivePricing>
+      <!--Optional:-->
+      <SalesRankings>
+        <!--1 or more repetitions:-->
+        <SalesRank>
+          <ProductCategoryId>string</ProductCategoryId>
+          <Rank>100</Rank>
+        </SalesRank>
+      </SalesRankings>
+      <!--Optional:-->
+      <LowestOfferListings>
+        <!--1 or more repetitions:-->
+        <LowestOfferListing>
+          <Qualifiers>
+            <ItemCondition>string</ItemCondition>
+            <ItemSubcondition>string</ItemSubcondition>
+            <FulfillmentChannel>string</FulfillmentChannel>
+            <ShipsDomestically>string</ShipsDomestically>
+            <ShippingTime>
+              <!--Optional:-->
+              <Max>string</Max>
+            </ShippingTime>
+            <SellerPositiveFeedbackRating>string</SellerPositiveFeedbackRating>
+          </Qualifiers>
+          <!--Optional:-->
+          <NumberOfOfferListingsConsidered>100</NumberOfOfferListingsConsidered>
+          <SellerFeedbackCount>100</SellerFeedbackCount>
+          <Price>
+            <!--Optional:-->
+            <LandedPrice>
+              <!--Optional:-->
+              <CurrencyCode>string</CurrencyCode>
+              <!--Optional:-->
+              <Amount>1000.00</Amount>
+            </LandedPrice>
+            <ListingPrice>
+              <!--Optional:-->
+              <CurrencyCode>string</CurrencyCode>
+              <!--Optional:-->
+              <Amount>1000.00</Amount>
+            </ListingPrice>
+            <!--Optional:-->
+            <Shipping>
+              <!--Optional:-->
+              <CurrencyCode>string</CurrencyCode>
+              <!--Optional:-->
+              <Amount>1000.00</Amount>
+            </Shipping>
+          </Price>
+          <MultipleOffersAtLowestPrice>string</MultipleOffersAtLowestPrice>
+        </LowestOfferListing>
+      </LowestOfferListings>
+      <!--Optional:-->
+      <Offers>
+        <!--1 or more repetitions:-->
+        <Offer>
+          <BuyingPrice>
+            <!--Optional:-->
+            <LandedPrice>
+              <!--Optional:-->
+              <CurrencyCode>string</CurrencyCode>
+              <!--Optional:-->
+              <Amount>1000.00</Amount>
+            </LandedPrice>
+            <ListingPrice>
+              <!--Optional:-->
+              <CurrencyCode>string</CurrencyCode>
+              <!--Optional:-->
+              <Amount>1000.00</Amount>
+            </ListingPrice>
+            <!--Optional:-->
+            <Shipping>
+              <!--Optional:-->
+              <CurrencyCode>string</CurrencyCode>
+              <!--Optional:-->
+              <Amount>1000.00</Amount>
+            </Shipping>
+          </BuyingPrice>
+          <RegularPrice>
+            <!--Optional:-->
+            <CurrencyCode>string</CurrencyCode>
+            <!--Optional:-->
+            <Amount>1000.00</Amount>
+          </RegularPrice>
+          <FulfillmentChannel>string</FulfillmentChannel>
+          <ItemCondition>string</ItemCondition>
+          <ItemSubCondition>string</ItemSubCondition>
+          <SellerId>string</SellerId>
+          <SellerSKU>string</SellerSKU>
+        </Offer>
+      </Offers>
+    </Product>
+    <!--Optional:-->
+    <Error>
+      <Type>Receiver</Type>
+      <Code>string</Code>
+      <Message>string</Message>
+      <Detail>
+        <!--You may enter ANY elements at this point-->
+        <AnyElement xmlns=""/>
+      </Detail>
+    </Error>
+  </GetCompetitivePricingForSKUResult>
+  <ResponseMetadata>
+    <RequestId>string</RequestId>
+  </ResponseMetadata>
+</GetCompetitivePricingForSKUResponse>
