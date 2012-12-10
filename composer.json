@@ -1,0 +1,27 @@
+{
+    "name": "choomz/amazon-mws-sdk",
+    "type": "library",
+    "license": "Apache-2.0",
+    "description": "Amazon MWS PHP SDK",
+    "keywords": ["amazon", "mws"],
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Valentin Ferriere",
+            "homepage": "http://www.v-labs.fr"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3.2"
+    },
+
+    "autoload": {
+        "classmap": [ "search/" ]
+    },
+
+    "target-dir": "",
+    
+    "include-path": ["search/src/"]
+}
+
